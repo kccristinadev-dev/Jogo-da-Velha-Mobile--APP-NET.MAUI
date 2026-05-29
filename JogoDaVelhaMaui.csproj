@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst;net8.0-windows</TargetFrameworks>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JogoDaVelhaMaui</RootNamespace>
+    <UseMaui>true</UseMaui>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationTitle>Jogo da Velha</ApplicationTitle>
+    <ApplicationId>com.kccristinadev.jogodavelha</ApplicationId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <MauiXaml Include="App.xaml" />
+    <MauiXaml Include="MainPage.xaml" />
+    <MauiAsset Include="Resources\**\*" />
+    <MauiIcon Include="Resources\Images\appicon.svg" />
+    <MauiSplashScreen Include="Resources\Images\splash.svg" Color="#A855F7" />
+  </ItemGroup>
+</Project>

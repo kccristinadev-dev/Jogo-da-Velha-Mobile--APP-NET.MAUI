@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JogoDaVelhaMaui.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+            <GradientStop Color="#E9D5FF" Offset="0.0"/>
+            <GradientStop Color="#A855F7" Offset="0.5"/>
+            <GradientStop Color="#F5F3FF" Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#9333EA"/>
+            <Setter Property="CornerRadius" Value="18"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BorderWidth" Value="2"/>
+            <Setter Property="BorderColor" Value="#E9D5FF"/>
+            <Setter Property="FontSize" Value="32"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto,*,*,*" ColumnDefinitions="*,*,*"
+              ColumnSpacing="10" RowSpacing="10" Margin="10">
+
+            <Label Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="3"
+                   Text="Jogo da Velha"
+                   FontSize="42"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+
+            <Button x:Name="campo1_0" Grid.Row="1" Grid.Column="0" Clicked="Jogar"/>
+            <Button x:Name="campo1_1" Grid.Row="1" Grid.Column="1" Clicked="Jogar"/>
+            <Button x:Name="campo1_2" Grid.Row="1" Grid.Column="2" Clicked="Jogar"/>
+
+            <Button x:Name="campo2_0" Grid.Row="2" Grid.Column="0" Clicked="Jogar"/>
+            <Button x:Name="campo2_1" Grid.Row="2" Grid.Column="1" Clicked="Jogar"/>
+            <Button x:Name="campo2_2" Grid.Row="2" Grid.Column="2" Clicked="Jogar"/>
+
+            <Button x:Name="campo3_0" Grid.Row="3" Grid.Column="0" Clicked="Jogar"/>
+            <Button x:Name="campo3_1" Grid.Row="3" Grid.Column="1" Clicked="Jogar"/>
+            <Button x:Name="campo3_2" Grid.Row="3" Grid.Column="2" Clicked="Jogar"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
